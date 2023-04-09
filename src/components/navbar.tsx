@@ -18,6 +18,7 @@ import {useEffect, useState} from "react";
 
 export default function Navbar({}){
     const [link_item,setlink] = useState([])
+    const [link_post,set_post_link] = useState<any>([])
     useEffect(()=>{
         async function fetch_i(){
             const res = await fetch('/api/products')
@@ -25,6 +26,12 @@ export default function Navbar({}){
             const data_item = data.map((el : any)=>el.id)
             // setlink(['a','b','c','d','e','f','g','h'])
             setlink(data_item)
+
+            const res_post = await fetch('/api/articles')
+            const data_post = await res_post.json()
+            const data_post_arr = Object.keys(data_post)
+            const data_temp = data_post_arr.map(el=>el);
+            set_post_link(data_temp)
         }
         fetch_i()
     },[])
@@ -33,7 +40,13 @@ export default function Navbar({}){
         <li><Link href='/'>Homepage</Link></li>
         <li><Link href='/products'>All Product</Link></li>
         <ul style={ {display:'flex',gap:'2em'} }>
-        {link_item.map(el => <li key={el}><Link href={`/products/${el}`}>Link to {el}</Link></li>)}
+        {link_item.map((el:any) => <li key={el}><Link href={`/products/${el}`}>Link to {el}</Link></li>)}
+        </ul>
+        <li><Link href='/articles'>Articles</Link></li>
+
+        <ul style={ {display:'flex',gap:'2em'} }>
+
+            {link_post.map((el:any) => <li key={el}><Link href={`/articles/${el}`}>Link to {el}</Link></li>)}
         </ul>
     </>
 }
