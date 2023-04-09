@@ -15,7 +15,7 @@ export interface CartState {
 }
 
 const initial_cart = {
-    a: 2,
+    a: 0,
     b: 0,
     c: 0,
     d: 0,
@@ -26,32 +26,32 @@ const initial_cart = {
 } as CartState
 
 const cartSlide = createSlice({
-    name: 'cart_name',
-    initialState: initial_cart,
-    reducers: {
-        add_amount: (state: CartState
-                     ,action: PayloadAction<number>
-        ) => {
-            state['c'] +=1
-            console.log(action)
-        },
-        test : (state:CartState)=>{
-            state.a +=1
-            state.b +=1
-            state.c +=1
-            state.d +=1
-            state.e +=1
-            state.f +=1
-            state.g +=1
-            state.h +=1
-            console.log(state)
-        }
+        name: 'cart_name',
+        initialState: initial_cart,
+        reducers: {
 
-    },
+            add_one: (state: any , action: PayloadAction<string>) => {
+                const payload_index = action.payload
+                state[payload_index] += 1
+            },
+            minus_one: (state: any , action: PayloadAction<string>) => {
+                const payload_index = action.payload
+                if(state[payload_index]> 0) state[payload_index] += -1
+            },
+        }
+    }
+)
+const couponSlide = createSlice({
+    name: 'coupon_name',
+    initialState : 0,
+    reducers : {
+        add : (state:any)=> state = 10
+    }
 })
 export const store = configureStore({
     reducer: {
-        cart: cartSlide.reducer
+        cart: cartSlide.reducer,
+        coupon: couponSlide.reducer
     }
 })
-export const {add_amount,test} = cartSlide.actions
+// export const {add_amount, test} = cartSlide.actions
