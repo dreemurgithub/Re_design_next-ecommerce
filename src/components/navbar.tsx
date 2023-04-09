@@ -39,6 +39,7 @@ export default function Navbar({}){
         <h3>Navbar</h3>
         <li><Link href='/'>Homepage</Link></li>
         <li><Link href='/products'>All Product</Link></li>
+        <li><Link href='/server/a'>server/a</Link></li>
         <ul style={ {display:'flex',gap:'2em'} }>
         {link_item.map((el:any) => <li key={el}><Link href={`/products/${el}`}>Link to {el}</Link></li>)}
         </ul>
