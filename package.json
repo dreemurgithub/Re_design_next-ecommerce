@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next-auth/firebase-adapter": "^2.0.1",
     "@reduxjs/toolkit": "^1.9.3",
     "@types/node": "18.15.11",
     "@types/react": "18.0.33",
@@ -16,6 +17,7 @@
     "dotenv": "^16.0.3",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "firebase": "^9.19.1",
     "mongoose": "^7.0.3",
     "next": "13.2.4",
     "next-auth": "^4.21.1",

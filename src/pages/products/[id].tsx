@@ -11,7 +11,7 @@ export default function Product_id(){
         fetch(`/api/products/${id}`)
             .then(res=>res.json())
             .then(data=>set_product(data))
-    })
+    },[id])
     return <>
         <div>
             <h1>Hello product</h1>
