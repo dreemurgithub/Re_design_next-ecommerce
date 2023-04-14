@@ -1,0 +1,29 @@
+body {
+    margin: 0 auto ;
+}
+@media (min-width : 901px) {
+    body {
+        width: clamp(850px,70%,1200px) ;
+    }
+    .product_list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width : 500px ) and (max-width: 900px) {
+    body {
+        width: clamp(500px,80%,750px) ;
+    }
+    .product_list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 499px) {
+    body {
+        width: 100%
+    }
+    .product_list {
+        grid-template-columns: 1fr;
+        width: 90%
+    }
+}

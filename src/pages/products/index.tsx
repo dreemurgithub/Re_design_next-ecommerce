@@ -15,10 +15,11 @@ export default function Post(){
                 <h3>{el.id}</h3>
                 <img src={el.url} alt="" width={144} height={144}/>
                 <p>{el.content}</p>
-                <button onClick={()=>dispatch({type:'cart_name/add_one', payload:el.id }) }>Add to cart</button>
+                <button onClick={()=>dispatch({type:'cart_name/add_one', payload:el.id }) }>Add one</button>
                 <button onClick={()=> {
                     dispatch({type:'cart_name/minus_one', payload:el.id } )
                 }}>Remove one</button>
+
             </>)}
         </main>
     </>

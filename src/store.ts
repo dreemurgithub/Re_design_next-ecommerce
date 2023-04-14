@@ -1,6 +1,6 @@
 import {configureStore, createSlice, combineReducers} from "@reduxjs/toolkit";
 import type {PayloadAction} from "@reduxjs/toolkit";
-import {reducer} from "next/dist/client/components/router-reducer/router-reducer";
+// import {reducer} from "next/dist/client/components/router-reducer/router-reducer";
 
 
 export interface CartState {
@@ -33,10 +33,20 @@ const cartSlide = createSlice({
             add_one: (state: any , action: PayloadAction<string>) => {
                 const payload_index = action.payload
                 state[payload_index] += 1
+                localStorage.setItem('cart',JSON.stringify(state))
             },
             minus_one: (state: any , action: PayloadAction<string>) => {
                 const payload_index = action.payload
                 if(state[payload_index]> 0) state[payload_index] += -1
+                localStorage.setItem('cart',JSON.stringify(state))
+
+            },
+            load_refresh : (state: any)=>{
+                if (localStorage.cart!==undefined && localStorage.cart!==null ) {
+                    const item = JSON.parse(localStorage.cart)
+                    const list = Object.keys(item)
+                    list.forEach(el=>state[el] = item[el])
+                }
             },
         }
     }
