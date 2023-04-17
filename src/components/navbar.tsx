@@ -61,7 +61,7 @@ export default function Navbar({}){
                                     ?'???': `Hello ${session.user.name}` }</b></a>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link " href='/articles'>Articles</Link>
+                            <Link className="nav-link " href='/order'>Order</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link " href='/products'>Cart</Link>

@@ -8,11 +8,11 @@ import Link from 'next/link';
 
 export default function Home() {
     const [post_list, setlist] = useState([])
-    const [width_item,set_item] = useState(300)
+    const [width_item, set_item] = useState(300)
     // const cart_state = useSelector(state  =>state.cart)
     //
     // const a_state = useSelector((state : {cart:CartState })=>state.cart.a)
-    const value :any = useSelector(state => state)
+    const value: any = useSelector(state => state)
     const dispatch = useDispatch()
     // const dispatch = useAppDispatch()
     useEffect(() => {
@@ -23,13 +23,16 @@ export default function Home() {
 
     return <>
         <main>
-            <button className={'btn btn-success'} onClick={() => dispatch({type: 'coupon_name/add'})}>Add coupon</button>
-            <h2>value: {JSON.stringify(value)}</h2>
-            <div style={ {  } }>
+            <div style={ {display:'flex',justifyContent:'center'} }>
+                <button className={'btn btn-success'} onClick={() => dispatch({type: 'coupon_name/add'})}>Add coupon
+                </button>
+            </div>
+            <div style={{}}>
 
                 <div style={{display: 'grid'}} className='product_list'>
 
-                    {post_list.map((el: { id: string, content: string, url: string, price: number }) => <div key={el.id}>
+                    {post_list.map((el: { id: string, content: string, url: string, price: number }) => <div
+                        key={el.id}>
                         <h3>Product {el.id}</h3>
                         <img src={el.url} alt="" width={250} height={250}/>
                         <p>{el.content}</p>
@@ -44,7 +47,9 @@ export default function Home() {
                             }}>Remove one
                             </button>
                             {/*<span className="input-group-text" >{value.cart[el.id]}</span>*/}
-                            <Link href={`/products/${el.id}`}> <button className="btn btn-outline-primary">{value.cart[el.id]}</button></Link>
+                            <Link href={`/products/${el.id}`}>
+                                <button className="btn btn-outline-primary">{value.cart[el.id]}</button>
+                            </Link>
                         </div>
 
 

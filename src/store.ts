@@ -55,13 +55,27 @@ const couponSlide = createSlice({
     name: 'coupon_name',
     initialState : 0,
     reducers : {
-        add : (state:any)=> state = 10
+        add : (state:any)=> state = 10,
+        remove : (state:any)=> state = 0,
     }
 })
+
+const total = createSlice({
+    name: 'total_cart',
+    initialState : 0,
+    reducers : {
+        total_count : (state:number,action: PayloadAction<number>)=> state = action.payload
+    }
+})
+
 export const store = configureStore({
+    // https://stackoverflow.com/questions/62966863/a-case-reducer-on-a-non-draftable-value-must-not-return-undefined
+    // TODO read this, basically how to use redux with primitive state(no {} ,just => state=1 ||  => state = 'a')
+    // TODO read update session from client to server https://next-auth.js.org/getting-started/client#refetch-interval
     reducer: {
         cart: cartSlide.reducer,
-        coupon: couponSlide.reducer
+        coupon: couponSlide.reducer,
+        total : total.reducer
     }
 })
 // export const {add_amount, test} = cartSlide.actions
