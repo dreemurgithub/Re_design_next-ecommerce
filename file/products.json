@@ -1,47 +1,119 @@
 
   [ {"id": "a",
   "content": "loreim ipsum a",
-  "url": "https://www.publicdomainpictures.net/pictures/500000/t2/image-1679772008Im4.jpg",
-  "price": 23
+  "url": "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fiphone_11_2.jpeg?alt=media&token=2e8b6c8e-56fa-4cfd-86c4-9be2ee6205e0",
+  "price": 23,
+    "props1": 6,
+    "propp2": "loreim 2",
+    "prop3": true,
+    "props4" : false,
+    "props5" : "loreim ipsum asd sdg dfhdfg sdfgsdf dsrtger erger ertherth erertewrqwe ewrt i uy qwe t4  w r e55y ejtertj",
+    "props6": "abcsdsdfas",
+    "prop8" : 15003000,
+    "prop9" : "loreim iasd dfnbwadn klkj ehrjkehnrt wegyfhjwebf weyfwef weyfwefggewf wefgwefew dsf"
+
 },
    {"id": "b",
   "content": "loreim ipsum b",
-  "url": "https://www.publicdomainpictures.net/pictures/500000/t2/vintage-poster-1678417153ACr.jpg",
-  "price": 24
-},
+  "url": "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fiphone_12_3.jpeg?alt=media&token=56832bd5-c510-4760-923c-fae236c6712c",
+  "price": 24,
+     "props1": 6,
+     "propp2": "loreim 2",
+     "prop3": true,
+     "props4" : false,
+     "props5" : "loreim ipsum asd sdg dfhdfg sdfgsdf dsrtger erger ertherth erertewrqwe ewrt i uy qwe t4  w r e55y ejtertj",
+     "props6": "abcsdsdfas",
+     "prop8" : 15003000,
+     "prop9" : "loreim iasd dfnbwadn klkj ehrjkehnrt wegyfhjwebf weyfwef weyfwefggewf wefgwefew dsf"
+
+   },
   {"id" : "c",
     "content": "loreim ipsum c",
-  "url": "https://www.publicdomainpictures.net/pictures/500000/t2/chocolate-poster.jpg",
-  "price": 18
-},
+  "url": "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fipad_gen9_1.jpeg?alt=media&token=507fbf42-b8db-4007-b294-397b95cce7ba",
+  "price": 18,
+    "props1": 6,
+    "propp2": "loreim 2",
+    "prop3": true,
+    "props4" : false,
+    "props5" : "loreim ipsum asd sdg dfhdfg sdfgsdf dsrtger erger ertherth erertewrqwe ewrt i uy qwe t4  w r e55y ejtertj",
+    "props6": "abcsdsdfas",
+    "prop8" : 15003000,
+    "prop9" : "loreim iasd dfnbwadn klkj ehrjkehnrt wegyfhjwebf weyfwef weyfwefggewf wefgwefew dsf"
+
+  },
   {
     "id": "d",
     "content": "loreim ipsum d",
-    "url": "https://www.publicdomainpictures.net/pictures/490000/t2/femina-les-modes-dhiver.jpg",
-    "price": 29
+    "url": "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fipad_air_1.jpeg?alt=media&token=79be0859-23b8-4915-8f92-4bf087ab3186",
+    "price": 29,
+    "props1": 6,
+    "propp2": "loreim 2",
+    "prop3": true,
+    "props4" : false,
+    "props5" : "loreim ipsum asd sdg dfhdfg sdfgsdf dsrtger erger ertherth erertewrqwe ewrt i uy qwe t4  w r e55y ejtertj",
+    "props6": "abcsdsdfas",
+    "prop8" : 15003000,
+    "prop9" : "loreim iasd dfnbwadn klkj ehrjkehnrt wegyfhjwebf weyfwef weyfwefggewf wefgwefew dsf"
+
   },
   {
     "id": "e",
     "content": "loreim ipsum e",
-    "url": "https://www.publicdomainpictures.net/pictures/460000/t2/vogue-cover-vintage-kunstdruck.jpg",
-    "price": 15
+    "url": "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fwatch_1_4.jpeg?alt=media&token=c5642ff3-ec27-4af1-bca2-87a5606f9fee",
+    "price": 15,
+    "props1": 6,
+    "propp2": "loreim 2",
+    "prop3": true,
+    "props4" : false,
+    "props5" : "loreim ipsum asd sdg dfhdfg sdfgsdf dsrtger erger ertherth erertewrqwe ewrt i uy qwe t4  w r e55y ejtertj",
+    "props6": "abcsdsdfas",
+    "prop8" : 15003000,
+    "prop9" : "loreim iasd dfnbwadn klkj ehrjkehnrt wegyfhjwebf weyfwef weyfwefggewf wefgwefew dsf"
+
   },
     {
       "id": "f",
       "content": "loreim ipsum f",
-      "url": "https://publicdomainpictures.net/pictures/210000/t2/easter-woman-and-basket-1487176689wZ7.jpg",
-      "price": 11
+      "url": "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fwatch_2_1.jpeg?alt=media&token=6585e4e6-801a-4b15-9dee-692523cc25f0",
+      "price": 11,
+      "props1": 6,
+      "propp2": "loreim 2",
+      "prop3": true,
+      "props4" : false,
+      "props5" : "loreim ipsum asd sdg dfhdfg sdfgsdf dsrtger erger ertherth erertewrqwe ewrt i uy qwe t4  w r e55y ejtertj",
+      "props6": "abcsdsdfas",
+      "prop8" : 15003000,
+      "prop9" : "loreim iasd dfnbwadn klkj ehrjkehnrt wegyfhjwebf weyfwef weyfwefggewf wefgwefew dsf"
+
     },
     {
       "id": "g",
       "content": "loreim ipsum g",
-      "url": "https://publicdomainpictures.net/pictures/40000/t2/wild-flowers-1365020983QpG.jpg",
-      "price": 33
+      "url": "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fairpod_1_1.jpeg?alt=media&token=33b2ebdd-086c-4b8e-9241-0b566ca66754",
+      "price": 33,
+      "props1": 6,
+      "propp2": "loreim 2",
+      "prop3": true,
+      "props4" : false,
+      "props5" : "loreim ipsum asd sdg dfhdfg sdfgsdf dsrtger erger ertherth erertewrqwe ewrt i uy qwe t4  w r e55y ejtertj",
+      "props6": "abcsdsdfas",
+      "prop8" : 15003000,
+      "prop9" : "loreim iasd dfnbwadn klkj ehrjkehnrt wegyfhjwebf weyfwef weyfwefggewf wefgwefew dsf"
+
     },
     {
       "id": "h",
       "content": "loreim ipsum h",
-      "url": "https://publicdomainpictures.net/pictures/20000/t2/saint-patrick-day-girl-122161296527192cLF.jpg",
-      "price": 38
+      "url": "https://firebasestorage.googleapis.com/v0/b/funix-way.appspot.com/o/xSeries%2FCCDN%2FReactJS%2FAssignment_Images%2FASM03_Resources%2Fiphone_13_4.jpeg?alt=media&token=dc72dde3-cfa4-4710-9493-ac2aa0ecf249",
+      "price": 38,
+      "props1": 6,
+      "propp2": "loreim 2",
+      "prop3": true,
+      "props4" : false,
+      "props5" : "loreim ipsum asd sdg dfhdfg sdfgsdf dsrtger erger ertherth erertewrqwe ewrt i uy qwe t4  w r e55y ejtertj",
+      "props6": "abcsdsdfas",
+      "prop8" : 15003000,
+      "prop9" : "loreim iasd dfnbwadn klkj ehrjkehnrt wegyfhjwebf weyfwef weyfwefggewf wefgwefew dsf"
+
     }
 ]

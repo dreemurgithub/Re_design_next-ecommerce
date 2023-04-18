@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import {useEffect, useState} from "react";
 import {useSession, signIn, signOut} from "next-auth/react"
-
-export default function Navbar({}){
+export default function Navbar(){
     const {data: session } = useSession()
     const [link_item,setlink] = useState([])
     const [link_post,set_post_link] = useState<any>([])
@@ -28,7 +27,7 @@ export default function Navbar({}){
         }
         fetch_i()
     },[])
-    return <div>
+    return <div >
         {/*<li><Link href='/products'>All Product</Link></li>*/}
 
         {/*<ul style={ {display:'flex',gap:'2em'} }>*/}
@@ -68,7 +67,7 @@ export default function Navbar({}){
                         </li>
                         <li className="nav-item dropdown">
                             <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
+                                  aria-expanded="false">
                                 Products
                             </Link>
                             <ul className="dropdown-menu">
@@ -93,7 +92,7 @@ export default function Navbar({}){
                         <li className="nav-item dropdown">
                             <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                   aria-expanded="false">
-                                ServerSide-Link
+                                ServerSide
                             </Link>
                             <ul className="dropdown-menu">
                                 {server_products.map((el:any) =>
