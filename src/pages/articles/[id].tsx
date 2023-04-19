@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-
+import Link from 'next/link'
 
 export async function getStaticPaths() {
 
@@ -74,6 +74,10 @@ export default function Articles_ID({article_id}: { article_id: string }) {
                 laboriosam molestias non perferendis repellat ullam voluptatum? Est facere iure nulla perferendis saepe,
                 sint sunt.</p>
         </div>
+        <section>
+            <Link href={'https://www.silkandwillow.com/pages/about-us'}>Do this</Link>
+        </section>
 
     </article>
+
 }

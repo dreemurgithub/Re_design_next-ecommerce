@@ -21,6 +21,7 @@ export default function Server({data}:{data: string}){
     })
 
     return <>
+        <Link href='https://cellphones.com.vn/sforum/elon-musk-doi-bien-tru-so-chinh-cua-twitter-thanh-noi-o-cho-nguoi-vo-gia-cu'>Design like this</Link>
         <p>Today is from getServerSideProps : {data} </p>
         <h2>url link is server/{id}</h2>
 

@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import {useDispatch} from "react-redux";
 import {useRouter} from "next/router";
 import {useSelector} from "react-redux";
+import Link from 'next/link'
 
 export default function Product_id() {
     const [product, set_product] = useState({id: 'not found', url: 'not found', price: 0, content: 'not found'})
@@ -30,6 +31,7 @@ export default function Product_id() {
     }
 
     return <>
+        <Link href={'https://www.adoredvintage.com/collections/dresses/products/feminine-vintage-inspired-beige-floral-printed-tiered-maxi-sundress'}>Design like this</Link>
         <div id='product_page' style={{display: 'grid'}}>
 
             <div style={{display: 'flex'}}>

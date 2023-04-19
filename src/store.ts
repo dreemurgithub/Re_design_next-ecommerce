@@ -67,6 +67,56 @@ const total = createSlice({
         total_count : (state:number,action: PayloadAction<number>)=> state = action.payload
     }
 })
+const menu = createSlice({
+    name: 'menu_show' ,
+    initialState : ['none','none','none'],
+    reducers : {
+        server : (state:any)=> {
+            if((state[0]==='none' && state[1]==='none'&& state[2]==='none') || (state[0]==='block' || state[1]==='block'))  {
+                state[0] = 'none'
+                state[1] = 'none'
+                state[2] = 'block'
+            }
+            else {
+                state[0] = 'none'
+                state[1] = 'none'
+                state[2] = 'none'
+            }
+
+
+        },
+        article : (state:any)=> {
+            if((state[0]==='none' && state[1]==='none'&& state[2]==='none')|| (state[0]==='block' || state[2]==='block' ) ) {
+                state[0] = 'none'
+                state[1] = 'block'
+                state[2] = 'none'
+            }
+            else{
+                state[0] = 'none'
+                state[1] = 'none'
+                state[2] = 'none'
+            }
+        },
+        product : (state:any)=> {
+            if((state[0]==='none' && state[1]==='none'&& state[2]==='none')|| state[1]==='block' || state[2]==='block' ) {
+                state[0] = 'block'
+                state[1] = 'none'
+                state[2] = 'none'
+            }
+            else {
+                state[0] = 'none'
+                state[1] = 'none'
+                state[2] = 'none'
+            }
+
+        },
+        hid_all :(state:any)=> {
+            state[0] = 'none'
+            state[1] = 'none'
+            state[2] = 'none'
+        }
+    }
+})
 
 export const store = configureStore({
     // https://stackoverflow.com/questions/62966863/a-case-reducer-on-a-non-draftable-value-must-not-return-undefined
@@ -75,7 +125,8 @@ export const store = configureStore({
     reducer: {
         cart: cartSlide.reducer,
         coupon: couponSlide.reducer,
-        total : total.reducer
+        total : total.reducer,
+        menu: menu.reducer
     }
 })
 // export const {add_amount, test} = cartSlide.actions

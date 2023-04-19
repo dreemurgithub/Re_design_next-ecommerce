@@ -28,6 +28,8 @@ export default function Post() {
             .then(data => setlist(data))
         const AAA :any = document.querySelector('.form-check-input')
         if(coupon>0 && (AAA!==null)) AAA.checked=true
+
+
     }, [])
     return <div className='cart_display'>
         <div>
@@ -74,33 +76,33 @@ export default function Post() {
                 }}>Submit</button>
             </div>
         </div>
-        <table className='container text-center'>
-            <tr className='row border text-white bg-dark'>
-                <th className="col border">Image</th>
-                <th className="col">Name</th>
-                <th className="col">Price</th>
-                <th className="col">Amount</th>
-                <th className="col">Total</th>
-            </tr>
+        <div className='container text-center'>
+            <div className='row border text-white bg-dark'>
+                <div className="col border">Image</div>
+                <div className="col">Name</div>
+                <div className="col">Price</div>
+                <div className="col">Amount</div>
+                <div className="col">Total</div>
+            </div>
 
             {post_list.map((el: any) => {
-                if (cart[el.id] > 0) return <tr className='row border'>
-                    <th className="col border"><img src={el.url} alt="" className={'img-fluid col '}  /></th>
-                    <th className="col border" style={ {display:'flex',flexDirection:'column',justifyContent:'center'} }><span>{el.id}</span> </th>
-                    <th className="col border" style={ {display:'flex',flexDirection:'column',justifyContent:'center'} }><span>{el.price}$</span></th>
-                    <th className="col border" style={ {display:'flex',flexDirection:'column',justifyContent:'center'} }><span>{cart[el.id]}</span></th>
-                    <th className="col border" style={ {display:'flex',flexDirection:'column',justifyContent:'center'} }> <span>{cart[el.id] * el.price}$</span></th>
+                if (cart[el.id] > 0) return <div className='row border'>
+                    <div className="col border"><img src={el.url} alt="" className={'img-fluid col '}  /></div>
+                    <div className="col border" style={ {display:'flex',flexDirection:'column',justifyContent:'center'} }><span>{el.id}</span> </div>
+                    <div className="col border" style={ {display:'flex',flexDirection:'column',justifyContent:'center'} }><span>{el.price}$</span></div>
+                    <div className="col border" style={ {display:'flex',flexDirection:'column',justifyContent:'center'} }><span>{cart[el.id]}</span></div>
+                    <div className="col border" style={ {display:'flex',flexDirection:'column',justifyContent:'center'} }> <span>{cart[el.id] * el.price}$</span></div>
 
-                </tr>
+                </div>
                 else return null
             })}
-            <tr className='row border text-white bg-dark' >
-                <th className="col"></th>
-                <th className="col "></th>
-                <th className="col "></th>
-                <th className="col "></th>
-                <th className="col "></th>
-            </tr>
-        </table>
+            <div className='row border text-white bg-dark' style={{ height:'0.5em' }}>
+                <div className="col"></div>
+                <div className="col "></div>
+                <div className="col "></div>
+                <div className="col "></div>
+                <div className="col "></div>
+            </div>
+        </div>
     </div>
 }
