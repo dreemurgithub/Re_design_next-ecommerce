@@ -53,10 +53,10 @@ const cartSlide = createSlice({
 )
 const couponSlide = createSlice({
     name: 'coupon_name',
-    initialState : 0,
+    initialState : 10,
     reducers : {
-        add : (state:any)=> state = 10,
-        remove : (state:any)=> state = 0,
+        add : (state:any)=> state = 20,
+        remove : (state:any)=> state = 10,
     }
 })
 

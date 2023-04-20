@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import {useSelector} from "react-redux";
+import {useSelector,useDispatch} from "react-redux";
 import React, {useEffect, useMemo, useState} from "react";
 
 export default function Modal() {
@@ -8,6 +8,7 @@ export default function Modal() {
     const [link_post, set_post_link] = useState<any>([])
     const [server_products, set_server] = useState([])
 
+    const dispatch = useDispatch()
     useEffect(() => {
         fetch('/api/products').then((res:any)=>res.json()).then((data:any)=>{
             const data_item = data.map((el: any) => el.id)
@@ -26,24 +27,29 @@ export default function Modal() {
         // fetch_i()
     },[] )
 
-    return <div className='container-fluid'>
+    return <div className='container-fluid' onClick={ ()=>dispatch({type: 'menu_show/hid_all'}) }>
         <div style={{display: menu_show[0] ,textAlign: 'center'}}>
+
             <ul  className="navbar-nav display_menu">
+
                 {link_item.map((el: any) =>
                     <li key={el} style={{ border:'1px black solid', borderRadius:'1em'  }}>
                         <Link href={`/products/${el}`} className="nav-link">
                             Product: {el}</Link>
                     </li>)}
+
             </ul>
         </div>
         <div style={{display: menu_show[1],textAlign: 'center'}}>
 
             <ul  className="navbar-nav display_menu">
+
                 {link_post.map((el: any) =>
                     <li key={el} className='nav-item' style={{ border:'1px black solid' , borderRadius:'1em' }}>
                         <Link href={`/articles/${el}`} className="nav-link">
                             Articles: {el}</Link>
                     </li>)}
+
             </ul>
         </div>
         <div style={{display: menu_show[2],textAlign: 'center'}} >

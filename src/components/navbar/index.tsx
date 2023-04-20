@@ -5,7 +5,7 @@ import React from 'react';
 import {useDispatch} from "react-redux";
 
 export default function Navbar({children}: { children: React.ReactNode }) {
-    const {data: session} = useSession()
+    const {data: session , status } = useSession()
     const dispatch = useDispatch()
 
     return <div>
@@ -32,8 +32,7 @@ export default function Navbar({children}: { children: React.ReactNode }) {
                         </li>
                         <li className="nav-item">
                             <a className="nav-link"><b>
-                                {(session === null || session === undefined || session.user === undefined || session.user === null || session.user.name === undefined)
-                                    ? '???' : `${session.user.name}`}</b></a>
+                                {status}!</b></a>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link " href='/order'>Order</Link>
@@ -64,6 +63,7 @@ export default function Navbar({children}: { children: React.ReactNode }) {
                             </ul>
                         </li>
                         {children}
+
                     </ul>
                 </div>
             </div>
