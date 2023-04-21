@@ -1,11 +1,13 @@
 export default function Footer(){
-    return <footer>
+    return <footer style={ { padding:'0',width:'1200px' } }>
         <div  style={{
-            backgroundColor: 'whitesmoke' ,
-            paddingLeft: '1000px',
-            marginLeft: '-1000px',
-            paddingRight:  '1000px',
-            marginRight: '-1000px',
+            // backgroundColor: 'whitesmoke' ,
+            // paddingLeft: '1000px',
+            // marginLeft: '-1000px',
+            // paddingRight:  '1000px',
+            // marginRight: '-1000px',
+            // maxWidth: '100%' ,
+            // overflowX : 'hidden'
 
         }}>
             <div className="text-center text-lg-start text-muted">

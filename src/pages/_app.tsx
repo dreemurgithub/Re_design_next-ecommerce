@@ -19,12 +19,16 @@ export default function App({Component, pageProps}: AppProps) {
     return <>
         <SessionProvider session={pageProps.session}>
             <Provider store={store}>
+
                 <div className='nav_container'>
                     {/*<Navbar/>*/}
-                    <Navbar>
-                        <Cart/>
-                    </Navbar>
-                    <Modal/>
+                    <div>
+                        <Navbar>
+                            <Cart/>
+                        </Navbar>
+                        <Modal/>
+                    </div>
+
                 </div>
                 <div>
 

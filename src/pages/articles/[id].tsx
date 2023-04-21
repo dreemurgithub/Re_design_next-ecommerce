@@ -44,15 +44,18 @@ export default function Articles_ID({article_id}: { article_id: string }) {
             // alert(Object.keys(array_articles))
         }
 
-        fetch_i()
+        // fetch_i()
+        fetch(`/api/articles/${article_id}`)
+            .then(res=>res.json())
+            .then(data_f=>setdata(data_f))
         // fetch(`/api/articles/${article_id}`)
         //     .then(res=>res.json())
         //     .then(data_if=>setdata(data_if))
-    }, [data])
-    return <article style={{textAlign: 'justify'}}>
+    }, [])
+    return <article style={{textAlign: 'justify'}} className={'main_content'}>
         <h3>{article_id}: {data.category}</h3>
         <p>{data.author}</p>
-        <div id={'article'} style={{display:'grid'}}>
+        <div id={'article'} style={{display: 'grid'}}>
 
             <img src="https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-vang-2-1.jpg" width={450} alt=""/>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at consequatur debitis delectus dolor
@@ -74,8 +77,56 @@ export default function Articles_ID({article_id}: { article_id: string }) {
                 laboriosam molestias non perferendis repellat ullam voluptatum? Est facere iure nulla perferendis saepe,
                 sint sunt.</p>
         </div>
+
         <section>
-            <Link href={'https://www.silkandwillow.com/pages/about-us'}>Do this</Link>
+            <div className='article_img'>
+                <img
+                    src="https://thehappypuppysite.com/wp-content/uploads/2018/10/brown-dog-names-long.jpg"
+                    alt=""/>
+                <div>
+                    <h3>Lorem Ipsum passage</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <button className={'btn btn-outline-primary'}>Read more</button>
+                </div>
+            </div>
+            <div className='article_img'>
+                <img
+                    src="https://fishsubsidy.org/wp-content/uploads/2020/01/Maltese-Dog-Breed-1.jpg"
+                    alt=""/>
+                <div>
+                    <h3>Lorem Ipsum passage</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <button className={'btn btn-outline-primary'}>Read more</button>
+                </div>
+            </div>
+            <div className = 'article_img'>
+                <img
+                    src="https://i.pinimg.com/originals/b1/b0/70/b1b07099ea586404e1f2838c5b511206.png"
+                    alt=""/>
+                <div>
+                    <h3>Lorem Ipsum passage</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <button className={'btn btn-outline-primary'}>Read more</button>
+                </div>
+            </div>
+
+
         </section>
 
     </article>
