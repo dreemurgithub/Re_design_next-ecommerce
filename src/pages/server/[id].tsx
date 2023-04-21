@@ -41,7 +41,7 @@ export default function Server({data}: { data: string }) {
             .then(res => res.json())
             .then(data => set_all_product(data))
         // fetch_i()
-    }, [])
+    }, [id])
 
     function display_image(e: any) {
         const item = e.target
@@ -59,10 +59,28 @@ export default function Server({data}: { data: string }) {
 
     return <>
 
-        <blockquote style={{ padding :'1em',backgroundColor:'beige' }}>Today is from getServerSideProps : <b>{data}</b>, from link server/id===server/<b>{id}</b>, using new
+        <blockquote style={{padding: '1em', backgroundColor: 'beige'}}>Today is from getServerSideProps : <b>{data}</b>,
+            from link server/id===server/<b>{id}</b>, using new
             Date().toLocalestring() will create infinite
-            reload </blockquote>
-
+            reload
+        </blockquote>
+        <div style={{
+            width: '100%',
+            height: '30em',
+            backgroundImage: 'url("https://wallpapercave.com/wp/ncbCppR.jpg")',
+            padding: '0',
+            backgroundPosition: 'center center',
+            backgroundSize: 'auto',
+            color: 'white'
+        }}>
+            <div style={{ position: 'relative' , top:'20%',left:'10%',width:'40vw',textAlign: 'justify' }}>
+                <h3>Lorem: {state.id} </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at consequatur debitis delectus dolor
+                    ipsum, laboriosam molestias non perferendis repellat ullam voluptatum? Est facere iure nulla perferendis
+                    saepe, sint sunt.</p>
+                <button type="button" style={{ width:'10em' }} className="btn btn-light">Light</button>
+            </div>
+        </div>
         <div id={'product_page'}>
             <div style={{display: 'flex'}}>
                 <div style={{width: '70px', display: 'grid', overflowY: 'scroll'}}>

@@ -40,6 +40,9 @@ export default function Product_id() {
 
     return <>
         {/*<Link href={'https://www.adoredvintage.com/collections/dresses/products/feminine-vintage-inspired-beige-floral-printed-tiered-maxi-sundress'}>Design like this</Link>*/}
+        <div>
+
+        </div>
         <div id='product_page'>
 
             <div style={{display: 'flex'}}>
@@ -193,37 +196,155 @@ export default function Product_id() {
                     </div>
                 </div>
             </div>
+            <div>
 
-            <table className="table table-striped">
-                <thead>
-                <tr>
-                    <th scope="col">Type</th>
-                    <th scope="col">Infor 1</th>
-                    <th scope="col">Infor 2</th>
-                    <th scope="col">Infor 3</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">Type 1</th>
-                    <td>{product.props1}</td>
-                    <td>{product.propp2}</td>
-                    <td>{product.props3 ? 'Yes': 'No'}</td>
-                </tr>
-                <tr>
-                    <th scope="row">Type 2</th>
-                    <td>{product.props4 ? 'Yes' : 'No'}</td>
-                    <td>{product.props5}</td>
-                    <td>{product.props6}</td>
-                </tr>
-                <tr>
-                    <th scope="row">Type 3</th>
-                    <td >{product.prop8}</td>
-                    <td >{product.prop9}</td>
-                    <td>No</td>
-                </tr>
-                </tbody>
-            </table>
+                <table className="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Infor 1</th>
+                        <th scope="col">Infor 2</th>
+                        <th scope="col">Infor 3</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Type 1</th>
+                        <td>{product.props1}</td>
+                        <td>{product.propp2}</td>
+                        <td>{product.props3 ? 'Yes' : 'No'}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Type 2</th>
+                        <td>{product.props4 ? 'Yes' : 'No'}</td>
+                        <td>{product.props5}</td>
+                        <td>{product.props6}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Type 3</th>
+                        <td>{product.prop8}</td>
+                        <td>{product.prop9}</td>
+                        <td>No</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div className="d-grid gap-2">
+                    <button type="button" className="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Details
+                    </button>
+                </div>
+                <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div className="modal-dialog">
+                        <div className="modal-content " >
+                            <div className="modal-header text-center bg-danger" >
+                                <h1 className="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div className="modal-body" style={{ height:'70vh',overflowX:'scroll' }}>
+
+                                <table className="table table-striped" >
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Infor 1</th>
+                                        <th scope="col">Infor 2</th>
+                                        <th scope="col">Infor 3</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>{product.props1}</td>
+                                        <td>{product.propp2}</td>
+                                        <td>{product.props3 ? 'Yes' : 'No'}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{product.props4 ? 'Yes' : 'No'}</td>
+                                        <td>{product.props5}</td>
+                                        <td>{product.props6}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{product.prop8}</td>
+                                        <td>{product.prop9}</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{product.props1}</td>
+                                        <td>{product.propp2}</td>
+                                        <td>{product.props3 ? 'Yes' : 'No'}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{product.props4 ? 'Yes' : 'No'}</td>
+                                        <td>{product.props5}</td>
+                                        <td>{product.props6}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{product.prop8}</td>
+                                        <td>{product.prop9}</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{product.props1}</td>
+                                        <td>{product.propp2}</td>
+                                        <td>{product.props3 ? 'Yes' : 'No'}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{product.props4 ? 'Yes' : 'No'}</td>
+                                        <td>{product.props5}</td>
+                                        <td>{product.props6}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{product.prop8}</td>
+                                        <td>{product.prop9}</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{product.props1}</td>
+                                        <td>{product.propp2}</td>
+                                        <td>{product.props3 ? 'Yes' : 'No'}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{product.props4 ? 'Yes' : 'No'}</td>
+                                        <td>{product.props5}</td>
+                                        <td>{product.props6}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{product.prop8}</td>
+                                        <td>{product.prop9}</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{product.props1}</td>
+                                        <td>{product.propp2}</td>
+                                        <td>{product.props3 ? 'Yes' : 'No'}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{product.props4 ? 'Yes' : 'No'}</td>
+                                        <td>{product.props5}</td>
+                                        <td>{product.props6}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{product.prop8}</td>
+                                        <td>{product.prop9}</td>
+                                        <td>No</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div className="modal-footer" style={{display:'flex',justifyContent:'center'}}>
+                                <div className="d-grid gap-2" style={{ width:'40em' }}>
+                                    <button type="button" className="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                      X  Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
 
         </div>
     </>
