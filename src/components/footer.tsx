@@ -1,16 +1,21 @@
-export default function Footer(){
-    return <footer style={ { padding:'0',width:'1200px' } }>
-        <div  style={{
-            // backgroundColor: 'whitesmoke' ,
-            // paddingLeft: '1000px',
-            // marginLeft: '-1000px',
-            // paddingRight:  '1000px',
-            // marginRight: '-1000px',
-            // maxWidth: '100%' ,
-            // overflowX : 'hidden'
+import Link from 'next/link'
+
+export default function Footer() {
+    return <footer style={{
+        // position: 'absolute',
+        bottom: '0'
+
+    }}>
+        <div id={'footer'} style={{
+            backgroundColor: 'whitesmoke',
+            // paddingLeft: '100px',
+            // marginLeft: '-100px',
+            // paddingRight: '100px',
+            // marginRight: '-100px',
+
 
         }}>
-            <div className="text-center text-lg-start text-muted">
+            <div className="text-lg-start text-muted">
                 <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                     <div className="me-5 d-none d-lg-block">
                         <span>Get connected with us on social networks:</span>
@@ -57,18 +62,30 @@ export default function Footer(){
                 <section>
                     <div className="container-fluid " id='footer'>
                         <div className="row text-center">
-                            <div className="col-sm-6 col-md-4 col-lg-3">A</div>
-                            <div className="col-sm-6 col-md-4 col-lg-3">B</div>
-                            <div className="col-sm-6 col-md-4 col-lg-3">C</div>
-                            <div className="col-sm-6 col-md-4 col-lg-3">D</div>
-                            <div className="col-sm-6 col-md-4 col-lg-3">E</div>
-                            <div className="col-sm-6 col-md-4 col-lg-3">F</div>
-                            <div className="col-sm-6 col-md-4 col-lg-3">G</div>
-                            <div className="col-sm-6 col-md-4 col-lg-3">H</div>
-                            <div className="col-sm-6 col-md-4 col-lg-3">I</div>
-                            <div className="col-sm-6 col-md-4 col-lg-3">K</div>
-                            <div className="col-sm-6 col-md-4 col-lg-3">L</div>
-                            <div className="col-sm-6 col-md-4 col-lg-3">M</div>
+                            <div className="col-sm-6 col-md-4 col-lg-3 nav-item"><Link className='nav-link' href={'#'}>Link
+                                to A </Link></div>
+                            <div className="col-sm-6 col-md-4 col-lg-3 nav-item"><Link className='nav-link' href={'#'}>Link
+                                to B </Link></div>
+                            <div className="col-sm-6 col-md-4 col-lg-3 nav-item"><Link className='nav-link' href={'#'}>Link
+                                to C </Link></div>
+                            <div className="col-sm-6 col-md-4 col-lg-3 nav-item"><Link className='nav-link' href={'#'}>Link
+                                to D </Link></div>
+                            <div className="col-sm-6 col-md-4 col-lg-3 nav-item"><Link className='nav-link' href={'#'}>Link
+                                to E </Link></div>
+                            <div className="col-sm-6 col-md-4 col-lg-3 nav-item"><Link className='nav-link' href={'#'}>Link
+                                to F </Link></div>
+                            <div className="col-sm-6 col-md-4 col-lg-3 nav-item"><Link className='nav-link' href={'#'}>Link
+                                to G </Link></div>
+                            <div className="col-sm-6 col-md-4 col-lg-3 nav-item"><Link className='nav-link' href={'#'}>Link
+                                to H </Link></div>
+                            <div className="col-sm-6 col-md-4 col-lg-3 nav-item"><Link className='nav-link' href={'#'}>Link
+                                to I </Link></div>
+                            <div className="col-sm-6 col-md-4 col-lg-3 nav-item"><Link className='nav-link' href={'#'}>Link
+                                to K </Link></div>
+                            <div className="col-sm-6 col-md-4 col-lg-3 nav-item"><Link className='nav-link' href={'#'}>Link
+                                to L </Link></div>
+                            <div className="col-sm-6 col-md-4 col-lg-3 nav-item"><Link className='nav-link' href={'#'}>Link
+                                to M </Link></div>
                         </div>
                     </div>
                 </section>

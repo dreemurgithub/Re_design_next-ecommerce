@@ -40,7 +40,7 @@ export default function Product_id() {
 
     return <>
         {/*<Link href={'https://www.adoredvintage.com/collections/dresses/products/feminine-vintage-inspired-beige-floral-printed-tiered-maxi-sundress'}>Design like this</Link>*/}
-        <div id='product_page' style={{display: 'grid'}}>
+        <div id='product_page'>
 
             <div style={{display: 'flex'}}>
                 <div style={{width: '70px', display: 'grid', overflowY: 'scroll'}}>
