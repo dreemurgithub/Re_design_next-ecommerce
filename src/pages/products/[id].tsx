@@ -234,7 +234,7 @@ export default function Product_id() {
                         Details
                     </button>
                 </div>
-                <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel"
+                <div className="modal fade" id="exampleModal"  aria-labelledby="exampleModalLabel"
                      aria-hidden="true">
                     <div className="modal-dialog">
                         <div className="modal-content " >
