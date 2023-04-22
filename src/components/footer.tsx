@@ -1,20 +1,9 @@
 import Link from 'next/link'
 
 export default function Footer() {
-    return <footer style={{
-        // position: 'absolute',
-        bottom: '0'
+    return <footer>
 
-    }}>
-        <div id={'footer'} style={{
-            backgroundColor: 'whitesmoke',
-            // paddingLeft: '100px',
-            // marginLeft: '-100px',
-            // paddingRight: '100px',
-            // marginRight: '-100px',
-
-
-        }}>
+        <div>
             <div className="text-lg-start text-muted">
                 <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                     <div className="me-5 d-none d-lg-block">
@@ -89,14 +78,9 @@ export default function Footer() {
                         </div>
                     </div>
                 </section>
-                <section className="">
-                    <div className="container text-center text-md-start mt-5">
-
-                    </div>
-                </section>
 
                 <div className="text-center p-4">
-                    © 2023 Copyright:
+                    © 2023 Copyright: Lethanhdat
                 </div>
             </div>
         </div>
